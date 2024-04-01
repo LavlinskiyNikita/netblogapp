@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- light theme-->
+    <color name="white">#fff</color>
+    <color name="base">#F1ECE9</color>
+    <color name="Darkbase">#D8D3CF</color>
+    <color name="overlayDark">#D9D9D9</color>
+
+
+    <!-- dark theme-->
+    <color name="baseDark">#1F2023</color>
+    <color name="surfaceDark">#27292D</color>
+    <color name="overlayDarkDark">#2D2F34</color>
+    <color name="overlayDarkNavDark">#3B2F3440</color>
+    <color name="overlayLightDark">#383B40</color>
+    <color name="blackDark">#000</color>
+
+    <!--   -->
+</resources>

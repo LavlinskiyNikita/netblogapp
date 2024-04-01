@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/mainFrameLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mainHeaderApp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            tools:ignore="InvalidId">
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/notification"
+                android:layout_gravity="left|center"
+                android:scaleType="center"
+                android:background="@android:color/transparent"
+
+                />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/search_normal"
+                android:layout_gravity="right|center"
+                android:scaleType="center"
+                android:background="@android:color/transparent"/>
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollViewMain"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <ImageView
+                        android:id="@+id/photoUserPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/blackDark" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/TextTitlePost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textSize="25dp"
+                            android:textColor="@color/blackDark"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:id="@+id/TextDescriptionPost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="discraption"
+                            android:textColor="@color/blackDark"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>
